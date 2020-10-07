@@ -7,8 +7,9 @@ Auto generated Deno documentation:
   - [text](https://doc.deno.land/https/deno.land/x/ansi_esc/text.ts)
   - [cursor](https://doc.deno.land/https/deno.land/x/ansi_esc/cursor.ts)
 ## Text Example
+
 ```ts
-import { text, cursor } from "https://deno.land/x/ansi_esc@v1.0.0/mod.ts"
+import { text, cursor } from "https://deno.land/x/ansi_esc@v1.0.0/mod.ts";
 
 // Text foregrounds
 console.log(`${text.fore.red}Red`);
@@ -35,6 +36,7 @@ console.log(`${text.style.invert}Inverted${text.style.reset}`);
 ```
 ### Colours
 List of the colours available when using `text.<scope>.<colour>`.
+
 | Colours |
 | :------ |
 | Black   |
