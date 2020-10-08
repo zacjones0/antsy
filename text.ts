@@ -44,10 +44,7 @@ interface rgbOptions {
   background?: boolean;
 }
 
-/**
-  * Returns an ANSI escape sequence based on RGB values (defaults to foreground).
-  * @param rgb The RGB values should be passed through an array e.g. [red, green, blue].
-  */
+/** Returns an ANSI escape sequence based on RGB values (defaults to foreground).*/
 export function rgb(
   rgb: Array<Number>,
   options?: rgbOptions,
@@ -63,13 +60,7 @@ interface formatParams {
   styles?: Array<string>
 }
 
-/**
-  * Return a formatted string based on parameters
-  * @param str The string to format.
-  * @param params.foreground The name of a colour ("red", "blue", etc). RGB values are currently not supported.
-  * @param params.background Equivalent to params.foreground but for the text background.
-  * @param params.styles An array of styles e.g. ["underline", "italic", "bold"].
-  */
+/** Return a formatted string based on parameters */
 export function format(
   str: string,
   params?: formatParams

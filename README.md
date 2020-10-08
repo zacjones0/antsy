@@ -29,7 +29,7 @@ console.log(`${text.back.cyan}Cyan${text.back.reset}`);
 
 // RGB values [r, g, b]
 console.log(`${text.rgb([0, 0, 0])}Black Foreground`);
-console.log(`${text.rgb([0, 0, 0], { background: true })}${text.fore.white}Black Foreground${text.back.reset}`);
+console.log(`${text.rgb([0, 0, 0], { background: true })}${text.fore.white}Black Background${text.back.reset}`);
 
 // Text Styling (Some of these styles may not be supported by your terminal)
 console.log(`${text.style.underline}Underline${text.style.reset}`);
