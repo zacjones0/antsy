@@ -11,6 +11,9 @@ Auto generated Deno documentation:
 ```ts
 import { text, cursor } from "https://deno.land/x/ansi_esc@v1.0.0/mod.ts";
 
+// Format a string
+console.log(text.format("Formatted text", { foreground: "white", background: "blue", styles: ["underline"]}));
+
 // Text foregrounds
 console.log(`${text.fore.red}Red`);
 console.log(`${text.fore.yellow}Yellow`);
@@ -64,5 +67,5 @@ await cursor.moveTo(5, 10);
 ```
 # TODO
 - [ ] Add a mode to automatically reset after a line.
-- [ ] Implement `write("string", "foreground", "background")` function.
-- [ ] Add cursor show and hide functions.
+- [x] Implement `format()` function.
+- [x] Add cursor show and hide functions.

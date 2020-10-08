@@ -62,6 +62,16 @@ export async function restore() {
   await stdoutString(`${ESC}u`);
 }
 
+/** Shows the terminal cursor */
+export async function show() {
+  await stdoutString(`${ESC}?25h`);
+}
+
+/** Hides the terminal cursor */
+export async function hide() {
+  await stdoutString(`${ESC}?25l`);
+}
+
 async function stdoutString(str: string) {
   await Deno.stdout.write(new TextEncoder().encode(str));
 }
