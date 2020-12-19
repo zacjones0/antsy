@@ -34,7 +34,7 @@ function backward(n: Number = 1) {
 }
 
 /**
- * Move the cursor downwards n lines and to the first column.
+ * Move the cursor downwards and to the first column.
  * @param n Number of lines to move downwards
  */
 function nextln(n: Number = 1) {
@@ -42,7 +42,7 @@ function nextln(n: Number = 1) {
     return cursor;
 }
 /**
- * Move the cursor upwards n lines and to the first column.
+ * Move the cursor upwards and to the first column.
  * @param n Number of lines to move upwards
  */
 function prevln(n: Number = 1) {
